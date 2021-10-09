@@ -4,18 +4,23 @@ import { useState } from 'react'
 const Formulario = () => {
 
     const[fruta, setFruta] = useState("") 
-    const[Descripcion, setDescripcion] = useState("");
+    const[descripcion, setDescripcion] = useState("");
+
+    console.log("procesando datos");
 
     const guardarDatos = (e) =>{
         e.preventDefault();
-        console.log("Enviando datos");
-
-        if(!fruta.trim){
+        
+        if(!fruta.trim()){
             console.log("Ingrese dato en fruta");
+            break;
+        }
+        if(!descripcion.trim()){
+            console.log("Ingrese dato en Descripcion");
         }
     }
 
-  
+  /* fwegwegwegw */
 
 
     return (
